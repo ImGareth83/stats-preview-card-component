@@ -1,7 +1,9 @@
 @import url("https://fonts.google.com/specimen/Inter");
 @import url("https://fonts.google.com/specimen/Lexend+Deca");
 
-*{
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -19,6 +21,7 @@
 
 }
 
+
 body{
     background-color: var(--primary-dark-blue);
     color: var(--secondary-white);
@@ -32,6 +35,8 @@ body{
     align-content: center;
     justify-content: center;
     align-items: center;
+
+    min-height: 100vh;
 }
 
 
@@ -69,6 +74,10 @@ p{
     padding: 30px;
     
     border-radius: 10px 0px 0px 10px;
+}
+
+.description>h1,p,div{
+    margin-top: 20px;
 }
 
 h1>em{
